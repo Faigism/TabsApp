@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     fetchJobs()
   }, [])
-  if (isLoading) {
+  if (!isLoading) {
     return (
       <section className="jobs-loading">
         <div className="loading"></div>
